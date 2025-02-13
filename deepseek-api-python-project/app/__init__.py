@@ -9,7 +9,7 @@ client = OpenAI(api_key="sk-99bf12d8336a44b9aaf6be18b18628b8", base_url="https:/
 response = client.chat.completions.create(
     model="deepseek-chat",
     messages=[
-        #{"role": "system", "content": "You are a helpful assistant"},
+        {"role": "system", "content": "You are a helpful assistant"},
         {"role": "user", "content": "Hello"},
     ],
     stream=False
