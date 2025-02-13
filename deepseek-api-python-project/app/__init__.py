@@ -4,7 +4,7 @@ from openai import OpenAI
 
 #client = OpenAI(api_key="<DeepSeek API Key>", base_url="https://api.deepseek.com/v1")
 client = OpenAI(api_key="sk-99bf12d8336a44b9aaf6be18b18628b8", base_url="https://api.deepseek.com/v1")
-#这里的<DeepSeek API Key>，需要填写在官网申请的api key
+#这里的<DeepSeek API Key>，需要填写在官网申请的api key，申请链接：https://platform.deepseek.com/api_keys
 
 response = client.chat.completions.create(
     model="deepseek-chat",
