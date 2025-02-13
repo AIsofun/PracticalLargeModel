@@ -16,6 +16,5 @@ response = client.chat.completions.create(
 )
 
 print(response.choices[0].message.content)
-
 #输出：openai.APIStatusError: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
 #错误码402，意味着账号余额不足，充钱即可调用成功
